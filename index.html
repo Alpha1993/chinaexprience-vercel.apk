@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover China - Cultural Experiences & Student Stories</title>
+    <meta
+      name="description"
+      content="Explore fascinating Chinese culture through food, festivals, and personal student experiences from an African perspective."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navigation" class="navbar">
+      <div class="nav-container">
+        <div class="nav-header">
+          <div class="logo">
+            <div class="logo-icon">福齐</div>
+            <span class="logo-text">SeenDev</span>
+          </div>
+          <div class="desktop-nav">
+            <button class="nav-item active" data-section="hero">Home</button>
+            <button class="nav-item" data-section="chinese-food">
+              Chinese Food
+            </button>
+            <button class="nav-item" data-section="chinese-festivals">
+              Festivals
+            </button>
+            <button class="nav-item" data-section="student-experience">
+              Student Experience
+            </button>
+          </div>
+          <div class="mobile-menu-btn" id="mobile-menu-btn">
+            <span class="hamburger"></span>
+          </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+          <button class="mobile-nav-item active" data-section="hero">
+            Home
+          </button>
+          <button class="mobile-nav-item" data-section="chinese-food">
+            Chinese Food
+          </button>
+          <button class="mobile-nav-item" data-section="chinese-festivals">
+            Festivals
+          </button>
+          <button class="mobile-nav-item" data-section="student-experience">
+            Student Experience
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-background" id="hero-background">
+          <!-- New Slideshow Container -->
+          <div class="slideshow">
+            <img src="images/img1.jpg"China 1" class="slide active" />
+            <img src="images/slide2.jpg" alt="China 2" class="slide" />
+            <img src="images/slide3.jpg" alt="China 3" class="slide" />
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="floating-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Discover the Wonders of China
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">
+            A Journey Through Culture, Food, and Traditions
+          </p>
+          <div class="hero-buttons">
+            <button
+              class="btn-primary"
+              onclick="scrollToSection('chinese-food')"
+            >
+              Start Your Journey
+            </button>
+            <button
+              class="btn-secondary"
+              onclick="scrollToSection('chinese-food')"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="slide-indicators" id="slide-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+          </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('chinese-food')">
+          <div class="chevron-down">▼</div>
+        </div>
+      </section>
+
+      <!-- Chinese Food Section -->
+      <section id="chinese-food" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Chinese Foods You Must Try</h2>
+            <p class="section-description">
+              Discover the mouthwatering Chinese dishes Experience the
+              Tantalizing Taste of China" "Discover the Art of Chinese Cuisine,
+              Bite by Bite" "Deliciousness Straight From the Wok" "Deliciously
+              Addictive, Chinese Cuisine at Its Best
+            </p>
+          </div>
+
+          <!-- Food Grid Container -->
+          <div class="food-grid">
+            <!-- Food Card 1: Fried Rice -->
+            <div class="food-card">
+              <div
+                class="food-image"
+                style="
+                  background-image: url('images/Dumplings\ \(Jiaozi\).jpg');
+                "
+              ></div>
+              <div class="food-overlay">
+                <h3 class="food-name">Dumplings Jiaozi</h3>
+                <p class="food-description">
+                  Jiaozi, are a delicious part of Chinese cuisine, enjoyed by
+                  many across the world. These tasty stuffed parcels often bring
+                  families and friends together, symbolizing unity and warmth ..
+                </p>
+                <button class="like-btn" data-food="1">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-count">123</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Food Card 2: Noodles -->
+            <div class="food-card">
+              <div
+                class="food-image"
+                style="background-image: url('images/Kung-Pao-Chicken-19.jpg')"
+              ></div>
+              <div class="food-overlay">
+                <h3 class="food-name">Kung-Pao Chicken</h3>
+                <p class="food-description">
+                  When it comes to things I couldn’t live without, Kung Pao
+                  chicken is one of them. Yes, it’s that darn good. Like many
+                  great Chinese foods, Kung Pao chicken comes with a story. I
+                  previously wrote about the history of mapo tofu.
+                </p>
+                <button class="like-btn" data-food="2">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-count">89</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Food Card 3: Dumplings -->
+            <div class="food-card">
+              <div
+                class="food-image"
+                style="background-image: url('images/peking_duck.jpg')"
+              ></div>
+              <div class="food-overlay">
+                <h3 class="food-name">Peking_Duck</h3>
+                <p class="food-description">
+                  Peking Duck is among China’s most internationally renowned
+                  imperial dishes, famed for its crispy skin, succulent meat,
+                  and unique eating style.
+                </p>
+                <button class="like-btn" data-food="3">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-count">156</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-container">
+            <button class="btn-primary" onclick="showMoreRecipes()">
+              View More Flavors →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chinese Festivals Section -->
+      <section id="chinese-festivals" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Vibrant Chinese Festivals</h2>
+            <p class="section-description">
+              Experience the magic of Chinese celebrations where ancient
+              traditions come alive
+            </p>
+          </div>
+
+          <!-- Festival Navigation -->
+          <div class="festival-nav" id="festival-nav">
+            <button class="festival-btn active" data-festival="0">
+              <span class="festival-emoji">🐉</span>
+              Chinese New Year
+            </button>
+            <button class="festival-btn" data-festival="1">
+              <span class="festival-emoji">🌕</span>
+              Mid-Autumn Festival
+            </button>
+            <button class="festival-btn" data-festival="2">
+              <span class="festival-emoji">🐲</span>
+              Dragon Boat Festival
+            </button>
+            <button class="festival-btn" data-festival="3">
+              <span class="festival-emoji">🏮</span>
+              Lantern Festival
+            </button>
+          </div>
+
+          <!-- Festival Content -->
+          <div class="festival-content" id="festival-content">
+            <div class="festival-header" id="festival-header">
+              <span class="festival-emoji-large" id="festival-emoji-large"
+                >🐉</span
+              >
+              <h3 class="festival-name" id="festival-name">Chinese New Year</h3>
+              <p class="festival-chinese-name" id="festival-chinese-name">
+                春节
+              </p>
+              <div class="festival-meta">
+                <span class="meta-item">📅 January/February</span>
+                <span class="meta-item">⏰ 15 days</span>
+              </div>
+            </div>
+
+            <div class="festival-details">
+              <div class="festival-main">
+                <div class="festival-story">
+                  <h4 class="detail-title">✨ Festival Story</h4>
+                  <p class="festival-description" id="festival-description">
+                    The most important celebration in Chinese culture, marking
+                    the beginning of the lunar new year with family reunions,
+                    fireworks, and traditional customs.
+                  </p>
+                </div>
+
+                <div class="festival-traditions">
+                  <h4 class="detail-title">👥 Traditions & Customs</h4>
+                  <div class="traditions-grid" id="traditions-grid">
+                    <div class="tradition-item">
+                      Red envelopes (hongbao) with money
+                    </div>
+                    <div class="tradition-item">Dragon and lion dances</div>
+                    <div class="tradition-item">
+                      Reunion dinner on New Year's Eve
+                    </div>
+                    <div class="tradition-item">Fireworks and firecrackers</div>
+                    <div class="tradition-item">
+                      Spring cleaning before the new year
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="festival-sidebar">
+                <div class="significance-card">
+                  <h4 class="detail-title">🎁 Cultural Significance</h4>
+                  <p class="significance-text" id="significance-text">
+                    Family unity, good fortune, and fresh beginnings
+                  </p>
+                </div>
+
+                <div class="fun-fact-card">
+                  <h4 class="detail-title">💡 Fun Fact</h4>
+                  <p class="fun-fact-text" id="fun-fact-text">
+                    The celebration lasts for 15 days, ending with the Lantern
+                    Festival!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Student Experience Section -->
+      <section id="student-experience" class="content-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">My Experience</h2>
+            <p class="section-description">
+              Personal stories and insights from African students studying in
+              China
+            </p>
+          </div>
+
+          <!-- Student Activities Container -->
+          <div class="student-activities">
+            <!-- Jinyun Study Tour Card -->
+            <div class="activity-card">
+              <h3 class="activity-title">
+                Jinyun Study Tour & Global Youth Dialogue
+              </h3>
+              <img src="images/jinyuan.jpg" width="100%" height="220" />
+              <div class="activity-meta">April 11th – 12th 2025</div>
+              <p class="activity-content">
+                Participating in the "Global Youth Dialogue" Symposium on
+                "Building Common Prosperity" was an eye-opening experience. I
+                explored Jinyun's renowned 5A-level scenic spots, including
+                Xiandu—an iconic landscape that feels like stepping into a
+                magical world where nature whispers its secrets. The tour
+                deepened my understanding of China's cultural heritage.
+              </p>
+            </div>
+            <!-- Marathon Race Card with Photo -->
+            <div class="activity-card">
+              <h3 class="activity-title">Qingyuan Cross Country Race</h3>
+              <!-- New photo at top -->
+              <img src="images/Race1.jpg" width="100%" height="220" />
+              <div class="activity-meta">November 1, 2024</div>
+              <p class="activity-content">
+                A highlight of my time in China was competing in the 13.14 km
+                marathon race at the Qingyuan Cross Country Race. This
+                challenging yet rewarding event not only tested my physical
+                endurance but also connected me with fellow athletes from
+                diverse backgrounds.
+              </p>
+            </div>
+
+            <!-- Video Experience Card -->
+            <div class="activity-card">
+              <h3 class="activity-title">
+                Jinyun Study Tour & Global Youth Dialogue
+              </h3>
+              <div class="video-container">
+                <iframe
+                  width="100%"
+                  height="250"
+                  src="video/video.MP4"
+                  title="Student Experience in China"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <p class="activity-content">
+                Watch a glimpse of my adventures—from cultural festivals to
+                scenic explorations, captured in this video diary.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <h3 class="footer-title">Discover China</h3>
+          <p class="footer-description">
+            Experience the beauty, culture, and warmth of China through food,
+            festivals, and personal stories.
+          </p>
+          <div class="footer-links">
+            <a href="#chinese-food" class="footer-link">Chinese Food</a>
+            <a href="#chinese-festivals" class="footer-link">Festivals</a>
+
+            <a href="#student-experience" class="footer-link"
+              >Student Stories</a
+            >
+          </div>
+          <!-- New social media links section -->
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/your-profile"
+              target="_blank"
+              class="social-link"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy; 2025 Explore China. All rights reserved. Designed by Fuqi
+              <a
+                href="https://linkedin.com/in/alphajor-kamara-656992124"
+                target="_blank"
+                >SeenDev</a
+              >
+              <a
+                href="https://weixin.qq.com/"
+                target="_blank"
+                class="social-link"
+                >WeChat</a
+              >
+              <a
+                href="https://wa.link/kqtpcf"
+                target="_blank"
+                class="social-link"
+                >WhatsApp</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
